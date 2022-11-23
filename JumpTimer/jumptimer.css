@@ -1,3 +1,38 @@
-* {
-  background-color: yellow;
-}/*# sourceMappingURL=jumptimer.css.map */
+@font-face {
+  font-family: font1;
+  src: url(./fonts/Molot.otf);
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: font1;
+}
+
+.bg {
+  background-image: url("./images/futuristic-bg.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+    margin: 0 auto;
+    padding: 50px;
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px -5px #909090;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#countdown {
+  font-size: 100px;
+}
