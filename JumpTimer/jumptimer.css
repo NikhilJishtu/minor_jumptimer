@@ -19,20 +19,40 @@ body, html {
 }
 .card {
     margin: 0 auto;
-    padding: 50px;
+    padding: 30px;
     display: block;
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
     text-align: center;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 10px 10px -5px #909090;
+    box-shadow: 0 10px 10px -5px #000000;
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 #countdown {
-  font-size: 100px;
+  font-size: 80px;
+}
+
+.card2 {
+  margin: 0 auto;
+  padding: 30px;
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 10px -5px #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#countdown2 {
+font-size: 80px;
 }
