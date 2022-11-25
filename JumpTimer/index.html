@@ -7,14 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jumptimer.scss">
     <link rel="stylesheet" href="jumptimer.css">
-    <script src="timer.js" defer></script>
-    <script src="timer2.js" defer></script>
     <title>Jump Timer</title>
 </head>
 
 <body>
 
     <div class="bg"></div>
+
+    <div id="clock">
+        <p class="date">{{ date }}</p>
+        <p class="time">{{ time }}</p>
+        <p class="text">DIGITAL CLOCK with Vue.js</p>
+    </div>
 
     <div class="card">
         <span id="countdown"></span>
@@ -28,6 +32,12 @@
         <span id="countdown3"></span>
         </div>
 
+
+
+
+        <script src="timer.js"></script>
+        <script src="timer2.js"></script>
+        <script src="clock.js"></script>
 </body>
 
 </html>
