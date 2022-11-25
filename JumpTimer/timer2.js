@@ -21,6 +21,7 @@ secs2 %= 60;
 let pretty2 =( (mins2 < 10) ? "0" : "" ) + mins2 + ":" + ( (secs2 < 10) ? "0" : "" ) + secs2;
 
 document.getElementById("countdown3").innerHTML = pretty2;
+document.getElementById("countdown").innerHTML = pretty2;
 }
 
 startTimer(30*60);
