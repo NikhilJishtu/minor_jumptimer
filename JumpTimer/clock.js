@@ -1,24 +1,15 @@
-var clock = new Vue({
-    el: '#clock',
-    data: {
-        time: '',
-        date: ''
-    }
-});
+realClock();
 
-var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-var timerID = setInterval(updateTime, 1000);
-updateTime();
-function updateTime() {
-    var cd = new Date();
-    clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2);
-    clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+function realClock() {
+  var date = new Date();
+
+  document.querySelector(".circle-front").innerHTML =`${checkDigit(date.getHours())}:${checkDigit(date.getMinutes())}`
+  
+  setTimeout("realClock()", 1000);
 };
 
-function zeroPadding(num, digit) {
-    var zero = '';
-    for(var i = 0; i < digit; i++) {
-        zero += '0';
-    }
-    return (zero + num).slice(-digit);
+function checkDigit(i) {
+    if (i < 10) {i = "0" + i}; 
+    return i;
 }
+

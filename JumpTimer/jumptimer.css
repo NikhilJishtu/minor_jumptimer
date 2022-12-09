@@ -22,35 +22,42 @@ body, html {
 
 
 /* clock */
-
-p {
-  margin: 0;
-  padding: 0;
-}
-#clock {
-  font-family: 'Share Tech Mono', monospace;
-  color: #fff;
-  text-align: center;
+.circle {
   position: absolute;
+  border-radius: 50%;
+  top: 18%;
   left: 50%;
-  top: 20%;
   transform: translate(-50%, -50%);
-  color: #daf6ff;
-  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+  z-index: 2;
 }
-#clock .time {
-  letter-spacing: 0.05em;
-  font-size: 80px;
-  padding: 5px 0;
+
+.circle-front {
+  width: 17rem;
+  height: 17rem;
+  z-index: 2;
+  box-shadow: -10px 12px 19px 0 rgba(0, 0, 0, 0.5) inset;
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+  font-size: 110px;
+  font-weight: 100;
+  border: 1px blue solid;
 }
-#clock .date {
-  letter-spacing: 0.1em;
-  font-size: 24px;
-}
-#clock .text {
-  letter-spacing: 0.1em;
-  font-size: 12px;
-  padding: 20px 0 0;
+
+.circle-back {
+  width: 20rem;
+  height: 20rem;
+  z-index: 2;
+  box-shadow: -10px 12px 19px 0 rgba(0, 0, 0, 0.5) inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+  font-size: 110px;
+  font-weight: 100;
+  border: 1px rgb(239, 239, 239) solid;
 }
 
 
