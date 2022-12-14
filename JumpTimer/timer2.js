@@ -27,7 +27,7 @@ document.getElementById("fullscreenTimerId").innerHTML = secs2;
 // countdown van 10
 
 if(mins2 == 0 && secs2 < 11){
-    document.body.style.backgroundColor = 'lime';
+    document.body.style.backgroundColor = '#2803a0';
     document.getElementById("container").style.display="none"
     document.getElementById("fullscreenTimerId").style.display="block"
 }
@@ -40,7 +40,7 @@ if(mins2 == 0 && secs2 < 11){
 }, 1000);
 }
         
-startTimer(0.2*60);
+startTimer(30*60);
 
 
 
