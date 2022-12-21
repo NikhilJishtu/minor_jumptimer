@@ -8,12 +8,11 @@ ticker = setInterval("tick()", 1000);
 
 function tick( ) {
 let secs = timeInSecs;
-if (secs > 0) {
-timeInSecs--; 
+if (secs == 1800) {
+timeInSecs = 3600; 
 }
 else {
-clearInterval(ticker);
-startTimer(60*60);
+timeInSecs--; 
 }
 
 let mins = Math.floor(secs/60);
@@ -24,15 +23,3 @@ document.getElementById("countdown2").innerHTML = pretty;
 }
 
 startTimer(60*60);
-
-
-
-
-
-
-
-
-
-
-
-    
